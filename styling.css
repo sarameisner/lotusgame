@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Handjet;
+  background-color: rgba(255, 224, 182, 0.5); /* 50% gennemsigtig */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1.5rem;
+  background-color: #cfc3a6;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.373);
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0 10px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+.menu {
+  font-size: xx-large;
+  font-style: normal;
+  color: #c2a0a7;
+  -webkit-text-stroke: 0.1px #000000;
+  text-decoration: none;
+  filter: contrast(3);
+}
+nav a {
+  font-size: xx-large;
+  font-style: normal;
+  color: #c2a0a7;
+  -webkit-text-stroke: 0.1px #000000;
+  text-decoration: none;
+}
+nav a:hover {
+  filter: contrast(3);
+}
+
+.logo {
+  font-family: "solvent";
+  font-weight: 400;
+  font-size: 4.5rem;
+  font-style: normal;
+  color: #c2a0a7;
+  -webkit-text-stroke: 0.3px #000000;
+  text-decoration: none;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo:hover {
+  filter: contrast(1.5);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: Handjet;
+  text-transform: uppercase;
+  line-height: 300%;
+}
+
+footer {
+  background-color: #cfc3a6;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: Handjet;
+  color: #c2a0a7;
+  font-size: x-large;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.373);
+}
+
+.startskærm {
+  width: 20%;
+  height: 20%;
+}
+
+.level_complete_screen {
+  width: 19%;
+  height: 20%;
+}
+.spillebaggrund {
+  width: 19%;
+  height: 20%;
+}
+
+.forgrund {
+  width: 19%;
+  height: 20%;
+}
+
+.gameoverscreen {
+  width: 19%;
+  height: 20%;
+}
+
+.ejeren {
+  width: 33%;
+  height: 33%;
+}
+
+.kunden {
+  width: 33%;
+  height: 33%;
+}
+
+.gameoverkarakter {
+  width: 33%;
+  height: 33%;
+}
+
+.top {
+  width: 19%;
+  height: 20%;
+}
+
+.tshirt {
+  width: 19%;
+  height: 20%;
+}
+.vest {
+  width: 19%;
+  height: 20%;
+}
+
+.bukser {
+  width: 19%;
+  height: 20%;
+}
+
+.taske {
+  width: 19%;
+  height: 20%;
+}
+/* de 4 billeder på forsiden */
+.billeder_forsiden {
+  padding-top: 80px;
+  align-items: center;
+  margin-left: 40px;
+}
+.teknik {
+  width: 24%;
+  height: 25%;
+  margin-top: 2rem;
+}
+
+.grafik {
+  width: 24%;
+  height: 25%;
+  margin-top: 2rem;
+}
+
+.assets {
+  width: 24%;
+  height: 25%;
+  margin-top: 2rem;
+}
+
+.play {
+  width: 24%;
+  height: 25%;
+  margin-top: 2rem;
+}
+
+/* UI elementer på asset siden */
+.startknap {
+  width: 24%;
+  height: 25%;
+}
+
+.liv {
+  width: 17%;
+  height: 25%;
+}
+
+.questionknap {
+  width: 24%;
+  height: 25%;
+}
+
+.musikon {
+  width: 24%;
+  height: 25%;
+}
+
+.timerbaggrund {
+  width: 45%;
+  height: 50%;
+}
+
+.tidsramme {
+  width: 50%;
+  height: 50%;
+}
+
+.velkommen_bobbel {
+  width: 33%;
+  height: 33%;
+}
+
+.kundensnakker {
+  width: 33%;
+  height: 33%;
+}
+
+.kundensoenske {
+  width: 33%;
+  height: 33%;
+}
+.beskrivelse_aktivitetsdiagram {
+  padding: 40px 34px;
+  z-index: 1;
+  font-size: large;
+  background-image: url(./webp/papirbaggrund1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.statemachinediagram {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.statemachinediagram_beskrivelse {
+  background-color: #c2a0a7;
+  border-radius: 1%;
+  text-align: justify;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+.ide_tekst {
+  background-image: url(webp/papirbaggrund3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  margin-right: 60px;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  z-index: 1;
+  line-height: 1.5;
+}
+.ideoverskrift {
+  margin-top: 2rem;
+}
+
+.skitser {
+  display: flex;
+}
+.skitse_baggrund,
+.skitse_gameover_karakter,
+.skitse_ejer_karakter,
+.skitse_gamover,
+.skitse_talebobbler,
+.skitse_liv,
+.skitse_tøj1,
+.skitse_tøj2,
+.skitse_tøj3 {
+  width: 10%;
+  height: auto;
+  display: inline-flex;
+}
+
+/* MOBILESITE */
+@media screen and (max-width: 768px) {
+  .spillebaggrund {
+    width: 100%;
+    height: auto;
+  }
+
+  .forgrund {
+    width: 100%;
+    height: auto;
+  }
+
+  .gameoverscreen {
+    width: 100%;
+    height: auto;
+  }
+
+  .ejeren {
+    width: 100%;
+    height: auto;
+  }
+
+  .kunden {
+    width: 100%;
+    height: auto;
+  }
+
+  .gameoverkarakter {
+    width: 100%;
+    height: auto;
+  }
+
+  .top {
+    width: 100%;
+    height: auto;
+  }
+
+  .tshirt {
+    width: 100%;
+    height: auto;
+  }
+  .vest {
+    width: 100%;
+    height: auto;
+  }
+
+  .bukser {
+    width: 100%;
+    height: auto;
+  }
+
+  .taske {
+    width: 100%;
+    height: auto;
+  }
+}

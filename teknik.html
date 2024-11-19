@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+    <link rel="icon" href="png/favikon.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Lotus</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="spil.html">Spil</a></li>
+                <li> <a href="grafik.html"></a>Grafik</li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="beskrivelse_aktivitetsdiagram">
+            <div class="grid_1_1"></div>
+            <h1>Aktivitetsdiagram</h1>
+            <img src="png/lotus.png" alt="Aktivitetsdiagram" class="aktivitetsdiagram">
+            <p>Start:</p>
+            <ul>
+                <li> Man begynder spillet og står klar til at hjælpe kunderne i butikken.</li>
+                <li>Kunde kommer ind: En kunde træder ind i butikken og spørger efter et specifikt stykke tøj. Nu er det
+                    ens
+                    opgave at finde det.</li>
+
+                <li>Tøj falder ned fra loftet: Pludselig vælter en bunke tøj ned fra loftet og fylder butikken.</li>
+
+                <li>ind det rigtige tøjstykke: Man skal nu kigge rundt og træffe beslutninger for at finde det præcise
+                    tøjstykke, kunden leder efter. Man kan klikke på forskellige stykker tøj eller trække dem for at se
+                    nærmere.</li>
+
+                <li> Korrekt tøj fundet: Hvis man vælger det rigtige tøjstykke, går man videre til Level Complete Det
+                    betyder, at
+                    man har løst opgaven, og kunden er tilfreds.</li>
+
+                <li>Forkert tøj valgt: Hvis man vælger det forkerte tøj, mister man et liv.</li>
+
+                <li>Tre liv tabt (Game Over): Hvis man mister alle tre liv, ender spillet. Kunden forlader butikken
+                    utilfreds.</li>
+
+                <li>Start et nyt spil: Efter Game Over har man mulighed for at starte et nyt spil og prøve igen</li>
+
+            </ul>
+        </div>
+
+        <h1>State Machine diagram</h1>
+        <img src="png/diagram2.png" alt="statemachinediagram" class="statemachinediagram">
+        <ul class="statemachinediagram_beskrivelse">
+            <li>
+                Start:
+                Dette er det indledende punkt, når spillet starter. Overgangen til dette stadie sker, når siden
+                indlæses, og
+                "window.addEventListener("load", sidenVises)" kaldes. Dette stadie udløser "sidenVises" funktionen og
+                går videre til
+                "startSpil" staten.
+            </li>
+            <li>Start Spillet:
+                Dette stadie er starten af spillet. Her nulstilles point og liv, og timeren og animationerne
+                starter. Spillet
+                går derefter til "Good Falling" og "Bad Falling".</li>
+
+            <li>Good Falling:
+                Dette stadie er, når et godt element falder ned i butikken. Her starter animationen, og
+                spilleren kan
+                klikke på det for at score point. Når animationen er færdig, går spillet til "startSpil" igen.</li>
+            <li>Bad Falling:
+                Dette stadie er, når et dårligt element falder ned i butikken. Her starter animationen, og
+                hvis spilleren
+                klikker på det, mister man et liv. Når animationen er færdig, går spillet til "startSpil" igen.</li>
+            <li>Stop Spillet (Game Over eller Level Complete):
+                Når spillet stopper, fjernes alle animationer og lyttere fra elementerne.
+                Hvis spilleren løber tør for liv, vises "Game Over" skærmen, og spillet kan startes forfra.
+                Hvis spilleren opnår tilstrækkeligt med point, vises "Level Complete" skærmen, og spillet kan startes
+                forfra.</li>
+        </ul>
+
+
+    </main>
+    <footer>Lavet af Sara Meisner</footer>
+</body>
+
+</html>

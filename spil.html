@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+    <link rel="icon" href="png/favikon.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Lotus</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="spil.html">Spil</a></li>
+                <li><a href="grafik.html">Grafik</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="screen">
+            <div id="game">
+                <div id="game_background"></div>
+                <div id="game_elements">
+                    <div id="good_container1">
+                        <div id="good_sprite1"></div>
+                    </div>
+                    <div id="good_container2">
+                        <div id="good_sprite2"></div>
+                    </div>
+                    <div id="bad_container1">
+                        <div id="bad_sprite1"></div>
+                    </div>
+                    <div id="bad_container2">
+                        <div id="bad_sprite2"></div>
+                    </div>
+                    <div id="bad_container3">
+                        <div id="bad_sprite3"></div>
+                    </div>
+                    <div id="bad_container4">
+                        <div id="bad_sprite4"></div>
+                    </div>
+
+                </div>
+
+                <div id="game_foreground"></div>
+
+
+                <div id="game_ui">
+                    <div id="point">Point: 0</div>
+                    <div id="score_board"></div>
+                    <div id="life_board">
+                        <div id="liv_container">
+                            <div id="liv_sprite"></div>
+                        </div>
+                        <div id="liv">3</div>
+
+
+                    </div>
+                    <div id="time_board">
+                        <div id="timer_container">
+                            <div id="timer_baggrund"></div>
+                            <div id="timer_fyld" class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="start">
+                <!-- <div id="start_txt">Klik på kundens ønske, og intet andet</div> -->
+                <div id="startknap_container">
+                    <div id="start_knap"></div>
+                </div>
+
+            </div>
+            <div id="snak">
+                <div id="snak1">
+                </div>
+                <div id="snak2">
+                </div>
+                <div id="snak3">
+                </div>
+            </div>
+            <div id="game_over">
+
+                <div id="game_over_points">Du fik ?? points</div>
+                <div id="restart1">Try again loser</div>
+            </div>
+
+            <div id="level_complete">
+
+                <div id="level_complete_points">Du fik ?? points</div>
+                <div id="restart2">One more time baby</div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="sounds">
+        <audio src="lyde/baggrundsmusik.mp3" id="sounds_baggrund"></audio>
+        <audio src="lyde/kiss.mp3" id="sounds_good"></audio>
+        <audio src="lyde/boo.mp3" id="sounds_boo"></audio>
+    </div>
+    <footer>Lavet af Sara Meisner</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
